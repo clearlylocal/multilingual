@@ -1,0 +1,24 @@
+{
+	"lock": false,
+	"tasks": {
+		"fetch-ted": "deno run -A fetch_ted.ts",
+		"fetch-wiki": "deno run -A fetch_wiki.ts"
+	},
+	"imports": {
+		"zod": "https://esm.sh/v131/zod@3.21.4",
+		"std/": "https://deno.land/std@0.210.0/",
+		"cheerio": "https://esm.sh/v131/cheerio@1.0.0-rc.12"
+	},
+	"fmt": {
+		"semiColons": false,
+		"useTabs": true,
+		"lineWidth": 120,
+		"indentWidth": 4,
+		"singleQuote": true,
+		"proseWrap": "preserve",
+		"exclude": ["cached"]
+	},
+	"compilerOptions": { "strict": true },
+	"lint": { "rules": { "tags": ["recommended"] } },
+	"exclude": []
+}
